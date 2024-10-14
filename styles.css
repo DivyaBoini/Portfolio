@@ -486,7 +486,7 @@ h3 {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-bottom: 45px;
+    margin-bottom: 5px;
   }
   .we-text {
     color: #fff;
@@ -509,7 +509,7 @@ h3 {
       flex-direction: column;
     }
     .blue {
-      border-radius: 10px;
+      border-radius: 5px;
       border: 1px solid rgba(255, 255, 255, 0.5);
       background: rgba(77, 77, 77, 0.4);
       backdrop-filter: blur(17.5px);
@@ -536,8 +536,8 @@ h3 {
       /* padding-top: 30px;
 			padding-right: 30px;
 			padding-bottom: 30px; */
-      border-radius: 50px;
-      margin-bottom: 30px;
+      border-radius: 20px;
+      margin-bottom: 10px;
       .text-container {
         margin-top: 43px;
         h3 {
@@ -613,7 +613,6 @@ h3 {
         border-radius: 38px;
         padding: 11px 21px;
         align-items: center;
-        border: 2px solid var(--gradient, #f10e7f);
         background: var(
           --gradient,
           linear-gradient(90deg, #f10e7f 0%, #a41eac 49%, #532edb 100%)
@@ -897,7 +896,6 @@ h3 {
       border-radius: 38px;
       padding: 11px 21px;
       align-items: center;
-      border: 2px solid var(--gradient, #f10e7f);
       background: var(
         --gradient,
         linear-gradient(90deg, #f10e7f 0%, #a41eac 49%, #532edb 100%)

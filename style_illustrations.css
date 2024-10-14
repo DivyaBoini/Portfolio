@@ -299,7 +299,6 @@ header {
       border-radius: 38px;
       padding: 11px 21px;
       align-items: center;
-      border: 2px solid var(--gradient, #f10e7f);
       background: var(
         --gradient,
         linear-gradient(90deg, #f10e7f 0%, #a41eac 49%, #532edb 100%)
