@@ -72,7 +72,7 @@ header {
     }
     .logo-text {
       flex: 1;
-      padding-left: 15px;
+      padding-left: 44px;
       color: var(--base-100);
       font-family: Marko One;
       font-size: 32px;
@@ -98,11 +98,18 @@ header {
           display: inline-block;
           padding: 10px 20px;
           color: var(--base-100);
+          font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
           &:hover {
             background-color: var(--base);
-            border-radius: 10px;
+            border-radius: 24px;
             text-decoration: none;
           }
+          .selected{
+            border-bottom: 2px solid;
+            background: var(--gradient, linear-gradient(90deg, #F10E7F 0%, #A41EAC 49%, #532EDB 100%));
+         }
         }
       }
     }
@@ -208,7 +215,7 @@ h1 {
   background: url("./imgs/bg-gradient.png") lightgray -20.067px 0px / 102.778% 149.02%
     no-repeat;
   padding-top: 78px;
-  padding-bottom: 96px;
+  padding-bottom: 91px;
   .text-container {
     margin-left: 132px;
 
@@ -223,19 +230,32 @@ h1 {
       margin-bottom: 30px;
 
       .nice {
-        background: var(
-          --gradient,
-          linear-gradient(90deg, #f10e7f 0%, #a41eac 49%, #532edb 100%)
-        );
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        background: var(--gradient, linear-gradient(90deg, #F10E7F 0%, #A41EAC 49%, #532EDB 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: "Montserrat Alternates";
+font-size: 78px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+      }
+      .meet{
+        background: var(--gradient, linear-gradient(90deg, #F10E7F 0%, #A41EAC 49%, #532EDB 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Montserrat;
+font-size: 78px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
       }
     }
     p {
       color: #e3e1e1;
-      font-family: "Montserrat", sans-serif;
-      font-size: 24px;
+      font-family: Montserrat;
+      font-size: 20px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -626,6 +646,9 @@ h3 {
           line-height: 171.5%; /* 37.73px */
           margin-bottom: 0;
         }
+        &:hover{
+          border: 2px solid var(--gradient, #f10e7f);
+        }
       }
       .white-btn-text-wrapper {
         display: inline-flex;
@@ -861,10 +884,10 @@ h3 {
 .moreaboutme {
   display: flex;
   align-items: center;
+  padding-bottom: 80px;
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(90deg, #040428 -1.63%, #00000a 100%);
-  padding-bottom: 30px;
   padding-top: 10px;
   h4 {
     color: #fff;
@@ -883,6 +906,7 @@ h3 {
       rgba(255, 255, 255, 0.8) 48%,
       rgba(1, 0, 6, 0.57) 100%
     );
+    padding: 0.5px;
     margin-bottom: 20px;
     margin-top: 20px;
   }
@@ -906,11 +930,15 @@ h3 {
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      &:hover{
+        border: 2px solid var(--gradient, #f10e7f);
+      }
     }
   }
 }
 #designtp {
   background: #eaeaff;
+  padding-left: 100px;
   .heading-row {
     h2 {
       font-family: "Montserrat Alternates";
@@ -1008,10 +1036,14 @@ h3 {
   line-height: normal;
   text-align: center;
   border-radius: 24px;
+  margin-left: 15px;
   background: var(
     --gradient,
     linear-gradient(90deg, #f10e7f 0%, #a41eac 49%, #532edb 100%)
   );
   padding: 10px;
   width: 140px;
+  &:hover{
+    border: 2px solid var(--gradient, #f10e7f);
+  }
 }

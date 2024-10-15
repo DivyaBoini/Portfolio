@@ -40,8 +40,7 @@ header {
   justify-content: space-between;
   width: 100%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  background-color: #030710;
-  color: white;
+  background-color: #000;
   .logo-holder {
     display: flex;
     padding: 10px;
@@ -63,7 +62,7 @@ header {
     }
     .logo-text {
       flex: 1;
-      padding-left: 15px;
+      padding-left: 44px;
       color: var(--base-100);
       font-family: Marko One;
       font-size: 32px;
@@ -82,7 +81,6 @@ header {
       list-style-type: none;
       gap: 5px;
       margin: 0;
-
       li {
         display: inline-block;
 
@@ -90,11 +88,18 @@ header {
           display: inline-block;
           padding: 10px 20px;
           color: var(--base-100);
+          font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
           &:hover {
             background-color: var(--base);
-            border-radius: 10px;
+            border-radius: 24px;
             text-decoration: none;
           }
+          .selected{
+            border-bottom: 2px solid;
+            background: var(--gradient, linear-gradient(90deg, #F10E7F 0%, #A41EAC 49%, #532EDB 100%));
+         }
         }
       }
     }
@@ -267,7 +272,7 @@ header {
   flex-direction: column;
   justify-content: center;
   background: linear-gradient(90deg, #040428 -1.63%, #00000a 100%);
-  padding-bottom: 30px;
+  padding-bottom: 80px;
   padding-top: 10px;
   h4 {
     color: #fff;
@@ -309,6 +314,9 @@ header {
       font-style: normal;
       font-weight: 400;
       line-height: normal;
+      &:hover{
+        border: 2px solid var(--gradient, #f10e7f);
+      }
     }
   }
 }
@@ -326,10 +334,14 @@ header {
   line-height: normal;
   text-align: center;
   border-radius: 24px;
+  margin-left: 15px;
   background: var(
     --gradient,
     linear-gradient(90deg, #f10e7f 0%, #a41eac 49%, #532edb 100%)
   );
   padding: 10px;
   width: 140px;
+  &:hover{
+    border: 2px solid var(--gradient, #f10e7f);
+  }
 }

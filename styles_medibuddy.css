@@ -72,13 +72,13 @@ header {
     }
     .logo-text {
       flex: 1;
-      padding-left: 15px;
-      color: var(--base-100);
-      font-family: Marko One;
-      font-size: 32px;
-      font-weight: 400;
-      line-height: 42.91px;
-      text-align: left;
+      padding-left: 44px;
+      color: #FFF;
+font-family: "Marko One";
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
     }
   }
 
@@ -91,7 +91,6 @@ header {
       list-style-type: none;
       gap: 5px;
       margin: 0;
-
       li {
         display: inline-block;
 
@@ -99,11 +98,18 @@ header {
           display: inline-block;
           padding: 10px 20px;
           color: var(--base-100);
+          font-family: Montserrat;
+font-size: 14px;
+font-weight: 500;
           &:hover {
             background-color: var(--base);
-            border-radius: 10px;
+            border-radius: 24px;
             text-decoration: none;
           }
+          .selected{
+            border-bottom: 2px solid;
+            background: var(--gradient, linear-gradient(90deg, #F10E7F 0%, #A41EAC 49%, #532EDB 100%));
+         }
         }
       }
     }
@@ -1682,12 +1688,16 @@ h3 {
   line-height: normal;
   text-align: center;
   border-radius: 24px;
+  margin-left: 15px;
   background: var(
     --gradient,
     linear-gradient(90deg, #f10e7f 0%, #a41eac 49%, #532edb 100%)
   );
   padding: 10px;
   width: 140px;
+  &:hover{
+    border: 2px solid var(--gradient, #f10e7f);
+  }
 }
 
 .phase {
