@@ -101,15 +101,7 @@ line-height: normal;
           font-family: Montserrat;
 font-size: 14px;
 font-weight: 500;
-          &:hover {
-            background-color: var(--base);
-            border-radius: 24px;
-            text-decoration: none;
-          }
-          .selected{
-            border-bottom: 2px solid;
-            background: var(--gradient, linear-gradient(90deg, #F10E7F 0%, #A41EAC 49%, #532EDB 100%));
-         }
+          
         }
       }
     }
@@ -150,6 +142,18 @@ font-weight: 500;
         }
       }
     }
+  }
+}
+
+.hvritem{
+  &:hover {
+    background:var(
+      --gradient,
+      linear-gradient(90deg, #f10e7f 0%, #a41eac 49%, #532edb 100%)
+    );
+    background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
   }
 }
 
